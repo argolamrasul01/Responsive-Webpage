@@ -21,6 +21,14 @@
 }
 
 /* Shared style */
+img.responsive-image {
+    width: 100%;   
+    height: auto;      
+    max-width: 1200px;  
+    display: block;
+    margin: 0 auto;
+}
+
 .col-primary{
     color: #252432; 
 }
@@ -52,26 +60,21 @@
     display: flex;
 }
 
-.font-w-normal{
-    font-weight: 500;
-}
-
-.font-w-bold{
-    font-weight: 700;
-}
-
 .btn-primary{
     color:#FFFFFF;
     background-color: #E95A08;
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    width: 270px;
+    width: 100%;
     height: 50px;
-    padding: 26px 50px;
-
+    border: none;
+    cursor: pointer;
 }
 
+.btn-primary:hover{
+    background-color: #8987A1;
+}
 /* Navbar related style */
 .navbar{
     justify-content: space-between;
@@ -102,10 +105,57 @@
 .hero-title h3{
     font-size: 4rem;
     margin-bottom: 13px;
+    white-space: nowrap;
 }
 
 .hero-title p{
     font-size: 1.5rem;
+}
+
+
+/* Our-plants section */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 30px 20px;
+}
+
+
+.our-plants{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.plant{
+    text-align: center;
+}
+
+.plant h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.plant p{
+    font-size: 1.3rem;
+    margin: 16px 126px 49px;
+}
+
+.plant-container{
+    max-width: 270px;
+    text-align: center;
+}
+
+.plant-container .head{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.plant-container p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    
 }
 
 
@@ -135,7 +185,7 @@
     }
 
     .hero-title{
-        margin: 28px 16px 16px 65px;
+        margin: 28px 16px 65px;
     }
 
     .hero-title h3{
@@ -145,6 +195,42 @@
     .hero-title p{
         font-size: 0.875rem;
     }
+
+    .container{
+    display: grid;
+    grid-template-columns: repeat(2, 171px);
+    justify-content: space-evenly; 
+    gap: 30px 20px;
+    }
+
+    .plant h2, .plant p{
+        margin: 0 auto;
+    }
+
+    .plant h2{
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    .plant p{
+        font-size: 0.8rem;
+        margin: 0 28px 28px;       
+    }
+
+    .plant-container{
+        max-width: 270px;
+        text-align: center;
+    }
+
+    .plant-container .head{
+        font-size: 1rem;
+    }
+
+    .plant-container p{
+        font-size: 1rem;
+
+    } 
 
 
 
