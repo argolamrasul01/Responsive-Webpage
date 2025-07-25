@@ -158,6 +158,34 @@ img.responsive-image {
     
 }
 
+/* Flower-shop section */
+
+.flower-lover{
+    margin: 210px 150px 130px;
+}
+
+.flower-text{ 
+    padding: 38px 60px 0 38px;
+}
+
+.flower{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.flower-list li{
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.trusted{
+    position: relative;
+    width: 286px;
+    top: -750px;
+    left: 350px;
+    z-index: 1;
+}
 
 /* Responsive (USED MEDIA QUERY) */
 
@@ -231,6 +259,29 @@ img.responsive-image {
         font-size: 1rem;
 
     } 
+
+    .flower-lover{
+        flex-direction: column;
+        margin: 41px 17px 15px 143px;
+        margin: 0 auto;
+    }
+
+    .trusted{
+        display: none;
+    }
+
+    .img-flower img{
+        width: 100%;
+        padding: 41px 20px 18px;
+
+        
+    }
+    .flower{
+        font-size: 1.3rem;
+    }
+    .flower-list li{
+        font-size: 0.8rem;
+    }
 
 
 
