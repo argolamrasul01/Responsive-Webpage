@@ -310,6 +310,46 @@ img.responsive-image {
     width: 186px;
 }
 
+
+/* Footer section */
+.footer{
+    display: flex;
+    margin: 50px 160px;
+}
+
+.branding p{
+    max-width: 360px;
+    margin: 16px 110px 60px 0;
+    font-size: 1.2rem;
+}
+
+
+.footer-menu{
+    display: flex;
+}
+
+.first-part, .second-part{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.first-part a, .second-part a{
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 32px;
+
+}
+.first-part, .second-part{
+    margin-right: 75px;
+}
+
+.social img{
+    width: 36px;
+    margin-right: 10px;
+}
+
+
 /* Responsive (USED MEDIA QUERY) */
 
 @media screen and (max-width:576px) {
@@ -471,7 +511,14 @@ img.responsive-image {
     width: 100px;
 }
 
+.footer{
+    flex-direction: column;
+    margin: 50px 14px 50px 20px;
+}
 
+.footer-menu{
+    flex-direction: column;
+}
 
 
 }
