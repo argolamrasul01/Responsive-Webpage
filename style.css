@@ -276,6 +276,39 @@ img.responsive-image {
 }
 
 
+/* Subscription-section */
+.bunch-subscription{
+    background-image: url(assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bunch-head h2{
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.bunch-input{
+    margin-top: 20px;
+}
+
+.bunch-input input{
+    padding: 15px 540px 15px 20px;
+    border: none;
+}
+
+
+.bunch-input button{
+    width: 186px;
+}
 
 /* Responsive (USED MEDIA QUERY) */
 
@@ -287,6 +320,7 @@ img.responsive-image {
     .nav-item{
         display: none;
         justify-content: space-between;
+        align-items: center;
     }
 
     .hero-section{
@@ -419,5 +453,26 @@ img.responsive-image {
     width: 100%;
     gap: 20px;
   }
+
+  .bunch-subscription{
+    height: 50vh;
+  }
+
+  .bunch-head h2{
+    font-size: 1.1rem;
+  }
+
+  .bunch-input input{
+    padding: 15px 114px 15px 20px;
+    width: 218px;
+}
+
+.bunch-input button{
+    width: 100px;
+}
+
+
+
+
 }
 
