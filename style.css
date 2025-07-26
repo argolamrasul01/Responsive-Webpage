@@ -70,12 +70,12 @@ img.responsive-image {
     height: 50px;
     border: none;
     cursor: pointer;
+    
 }
 
 .btn-primary:hover{
     background-color: #8987A1;
 }
-
 
 
 /* Navbar related style */
@@ -296,18 +296,28 @@ img.responsive-image {
     font-weight: 700;
 }
 
+
+
 .bunch-input{
-    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    max-width: 720px;
+    margin-top: 25px;
+    
 }
 
 .bunch-input input{
-    padding: 15px 540px 15px 20px;
+    padding: 15px 340px 15px 20px;
     border: none;
 }
 
+.bunch-input input:focus{
+    outline: none;
+}
 
 .bunch-input button{
     width: 186px;
+    padding: 19px 53px;
 }
 
 
@@ -349,7 +359,6 @@ img.responsive-image {
     margin-right: 10px;
 }
 
-
 /* Responsive (USED MEDIA QUERY) */
 
 @media screen and (max-width:576px) {
@@ -361,6 +370,16 @@ img.responsive-image {
         display: none;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .brand-logo{
+        width: 63px;
+        margin-left:17px ;
+    }
+
+
+    .navbar ul li{
+        margin-right: 17px;
     }
 
     .hero-section{
@@ -390,10 +409,14 @@ img.responsive-image {
 
     .container{
         display: grid;
-        grid-template-columns: repeat(2, 171px);
-        justify-content: space-evenly; 
+        grid-template-columns: repeat(2, 170px);
+        justify-content: space-between; 
         gap: 30px 20px;
+        margin-right: 2px;
+        margin-left: 5px;
     }
+
+    
 
     .plant h2, .plant p{
         margin: 0 auto;
@@ -426,7 +449,6 @@ img.responsive-image {
 
     .flower-lover{
         flex-direction: column;
-        margin: 41px 17px 15px 143px;
         margin: 0 auto;
     }
 
@@ -437,14 +459,14 @@ img.responsive-image {
     .img-flower img{
         width: 100%;
         padding: 41px 20px 18px;
-
-        
+        margin-left: 8px;
     }
     .flower{
         font-size: 1.3rem;
     }
     .flower-list li{
         font-size: 0.8rem;
+        margin-left: 20px;
     }
 
     .latest-deal{
@@ -507,8 +529,15 @@ img.responsive-image {
     width: 218px;
 }
 
+
 .bunch-input button{
     width: 100px;
+    padding: 12px;
+    
+}
+
+.branding p{
+    margin-right: 16px;
 }
 
 .footer{
